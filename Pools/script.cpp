@@ -5,7 +5,7 @@
 #include <vector>
 #include <string>
 #include <ctime>
-
+//
 void drawstring(std::string string, float X, float Y)
 {
 	std::string Template = "<FONT FACE='$Font5_limited' COLOR='#%04X'>" + string + "</FONT>";
