@@ -32,7 +32,7 @@ void ScriptMain()
 	{
         std::string h = "";
         std::string m = "";
-        bool after12 = true;
+        bool after12 = false;
         if (CLOCK::GET_CLOCK_HOURS() < 10)
         {
             h += "0";
@@ -43,6 +43,7 @@ void ScriptMain()
             if (CLOCK::GET_CLOCK_HOURS() > 12)
             {
                 h += std::to_string(CLOCK::GET_CLOCK_HOURS() - 12);
+                after12 = true;
             }
             else
             {
